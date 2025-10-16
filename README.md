@@ -1,5 +1,5 @@
 # Mevrouw Greet Alan Cliker game
-### Luay All rights reserved. https://github.com/konijntje777/greet-alan-clicker
+### Luay All rights reserved. https://github.com/konijntje777/greet-alen-clicker
 #### readme writed by [『𝒚』](https://github.com/Love-Lumine)
 > niet snitchen
 ##### Het is een game over mevrouw Greet, je speelt het gewoon zoals cookieclicker.
