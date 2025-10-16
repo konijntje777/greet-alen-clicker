@@ -6,8 +6,7 @@
 # How to download it
 #### 1. Download de `sourcecode`. → [Download link]([https://pages.github.com/](https://github.com/konijntje777/greet-alen-clicker/archive/refs/heads/main.zip)) 
 #### 2. Unzip het.
-#### 3. Ga naar google chrome en type `chrome://extensions/`
-#### 4. Open de `Developer mode` of `Ontwikkelaarsmodus` rechtsboven
-#### 5. Klik op de knop `Uitgepakte extensie laden` en kies de unzipped sourcecode
-#### normal gezien is dat gewoon klaar, als dat niet lukt → [issue](https://github.com/konijntje777/greet-alen-clicker/issues/new/choose)
+#### 3. Open de `index.html` bij de unzipped bestanden
+#### 4. Click op mv.greet
+## normal gezien is dat klaar, als dat niet lukt → [issue](https://github.com/konijntje777/greet-alen-clicker/issues/new/choose)
 # NIET SNICHTEN
