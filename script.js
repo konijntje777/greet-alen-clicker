@@ -49,25 +49,38 @@ lastTime = now;
 // CLICK ALEN
 // --------------------
 alen.addEventListener("click", (e) => {
-  count += greetsPerClick;
-  save();
-  updateUI();
+    count += greetsPerClick;
+    save();
+    updateUI();
 
-  // Animation
-  alen.classList.add("clicked");
-  setTimeout(() => alen.classList.remove("clicked"), 150);
+    // Animation
+    alen.classList.add("clicked");
+    setTimeout(() => alen.classList.remove("clicked"), 150);
 
-  // Floating +X
-  const floatText = document.createElement("span");
-  floatText.className = "floating-text";
-  floatText.textContent = `+${greetsPerClick}`;
-  const rect = alen.getBoundingClientRect();
-  const xOffset = (Math.random() - 0.5) * 40;
-  const yOffset = (Math.random() - 0.5) * 20;
-  floatText.style.left = `${rect.left + rect.width / 2 + xOffset}px`;
-  floatText.style.top = `${rect.top + rect.height / 2 + yOffset}px`;
-  document.body.appendChild(floatText);
-  setTimeout(() => floatText.remove(), 1100);
+    // Floating +X
+    const floatText = document.createElement("span");
+    floatText.className = "floating-text";
+    floatText.textContent = `+${greetsPerClick}`;
+    
+    // =======================================================
+    // yichao 16/10/2025
+    // =======================================================
+    
+    // e.clientX 和 e.clientY 提供了鼠标相对于视口（viewport）的坐标
+    const x = e.clientX;
+    const y = e.clientY;
+    
+    // 设置 floatText 的位置
+    floatText.style.left = `${x}px`;
+    floatText.style.top = `${y}px`;
+    
+    // 为了让文字居中于鼠标点击点，添加了 CSS 偏移
+    // floatText.style.transform = 'translate(-50%, -100%)'; 
+    
+    // =======================================================
+
+    document.body.appendChild(floatText);
+    setTimeout(() => floatText.remove(), 1100);
 });
 
 // --------------------
