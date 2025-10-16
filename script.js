@@ -83,6 +83,13 @@ alen.addEventListener("click", (e) => {
     setTimeout(() => floatText.remove(), 1100);
 });
 
+//--------------------------------
+//防止用户拖动图片
+//-------------------------------
+alen.addEventListener('dragstart', (e) => {
+    e.preventDefault(); 
+});
+
 // --------------------
 // UPGRADE BUTTONS
 // --------------------
