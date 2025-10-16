@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Greet Alen Clicker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>👋 Greet Alen Clicker</h1>
+
+  <!-- Alen Clicker Image Section -->
+  <div id="game" style="text-align: center;">
+    <!-- This is the clickable Alen image -->
+    <img id="alen" src="images/skins/default.png" alt="Greet Alen" width="150" />
+    <p>You’ve clicked Greet <span id="count">0</span> times!</p>
+    <p>🎨 Current Skin: <span id="skinName">Default</span></p>
+  </div>
+
+  <hr />
+
+  <!-- Upgrade Section -->
+  <div id="upgrades">
+    <h2>Upgrades</h2>
+    <button id="clickUpgrade">👋 click Power (Cost: 100)</button>
+    <button id="autoUpgrade">🤖 Auto-clicker (Cost: 10)</button>
+  </div>
+
+  <hr />
+
+  <!-- Rebirth Section -->
+  <div id="rebirth">
+    <h2>Rebirth</h2>
+    <p>🔄 Rebirths: <span id="rebirthCount">0</span></p>
+    <button id="rebirthBtn">✨ Rebirth (Cost: 10,000 clicks)</button>
+  </div>
+
+  <!-- Animated notification banners (auto-created by JS) -->
+  <div id="banner-container"></div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

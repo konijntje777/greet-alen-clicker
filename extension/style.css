@@ -1,0 +1,80 @@
+body {
+  width: 300px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #fff6da, #ffeabf);
+  margin: 0;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#alen {
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+#alen:active {
+  transform: scale(0.9);
+}
+
+#count {
+  font-weight: bold;
+  color: #ff9800;
+}
+
+button {
+  background-color: #ffcc80;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ffa726;
+}
+
+#upgrades button,
+#rebirth button {
+  display: block;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+/* --- CLICK EFFECTS --- */
+
+/* Bounce effect */
+#alen.clicked {
+  transform: scale(1.15);
+  filter: brightness(1.3);
+}
+
+/* Floating text animation */
+.floating-text {
+  position: absolute;
+  color: #ffd166;
+  font-size: 18px;
+  font-weight: bold;
+  pointer-events: none;
+  animation: floatUp 1s ease-out forwards;
+  text-shadow: 0 0 8px #ffeb99;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
