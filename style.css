@@ -1,15 +1,20 @@
 body {
   font-family: "Poppins", sans-serif;
   text-align: center;
-  background: linear-gradient(135deg, #1e1e2e, #2c2c54);
+  background: linear-gradient(135deg, #0a0a0f, #2c2c54);
   color: #fff;
   padding: 10px;
   min-height: 100vh;
 }
 
 h1 {
-  color: #ffd166;
+  color: #ff6666;
   margin-bottom: 10px;
+}
+
+h2 {
+  color: #d10000;
+  margin-bottom: 20px;
 }
 
 button {
@@ -47,7 +52,7 @@ img#alen:active {
 
 .floating-text {
   position: absolute;
-  color: #ff0000;
+  color: #4e0101;
   font-size: 18px;
   font-weight: bold;
   pointer-events: none;

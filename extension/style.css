@@ -60,7 +60,7 @@ button:hover {
 /* Floating text animation */
 .floating-text {
   position: absolute;
-  color: #ffd166;
+  color: #580000;
   font-size: 18px;
   font-weight: bold;
   pointer-events: none;
