@@ -65,7 +65,7 @@ img#alen:active {
 
 .floating-text {
   position: absolute;
-  color: #4e0101;
+  color: #00FFFF;
   font-size: 18px;
   font-weight: bold;
   pointer-events: none;
