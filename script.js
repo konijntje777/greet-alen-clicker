@@ -90,6 +90,10 @@ alen.addEventListener('dragstart', (e) => {
     e.preventDefault(); 
 });
 
+alen.addEventListener('mousedown', (e) => {
+    e.preventDefault();
+});
+
 // --------------------
 // UPGRADE BUTTONS
 // --------------------

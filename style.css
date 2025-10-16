@@ -33,29 +33,32 @@ button:hover {
   transform: scale(1.05);
 }
 
+
+
 img#alen {
-  border-radius: 20px;
-  cursor: pointer;
-  transition: transform 0.2s ease, filter 0.3s ease;
+    /* 确保用户选中被阻止 */
+    user-select: none;
+    -webkit-user-select: none; 
+    -moz-user-select: none;
+    -ms-user-select: none;
+    
+    /* 确保拖动被阻止 */
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    -webkit-user-drag: none;
+    
 }
 
 img#alen:active {
-  transform: scale(0.9);
-  filter: brightness(1.3);
+    transform: scale(0.9);
+    filter: brightness(1.3);
 }
 
 /* --- CLICK EFFECTS --- */
+/* 此处只保留动画相关的样式*/
 #alen.clicked {
-  transform: scale(1.15);
-  filter: brightness(1.3);
-    /* 防止用户选中图片或文本内容 */
-    -webkit-user-select: none; /* Safari, Chrome */
-    -moz-user-select: none;    /* Firefox */
-    -ms-user-select: none;     /* IE/Edge */
-    user-select: none;         /* Standard syntax */
-
-    /* 防止用户拖动图片（拖动图片会打开新的标签页） */
-    -webkit-user-drag: none;   /* Safari, Chrome */           /* Standard syntax */
+    transform: scale(1.15);
+    filter: brightness(1.3);
 }
 
 
