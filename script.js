@@ -106,10 +106,10 @@ setInterval(() => {
     floatText.className = "floating-text auto";
     floatText.textContent = `+${autoGenerators * greetsPerClick}`;
     const rect = alen.getBoundingClientRect();
-    floatText.style.left = `${rect.left + rect.width / 2}px`;
-    floatText.style.top = `${rect.top + rect.height / 2}px`;
+    floatText.style.left = `${rect.left + rect.width / 3}px`;
+    floatText.style.top = `${rect.top + rect.height / 3}px`;
     document.body.appendChild(floatText);
-    setTimeout(() => floatText.remove(), 1000);
+    setTimeout(() => floatText.remove(), 1100);
     save();
     updateUI();
   }
