@@ -74,7 +74,7 @@ alen.addEventListener("click", (e) => {
     floatText.style.left = `${x}px`;
     floatText.style.top = `${y}px`;
     
-    // 为了让文字居中于鼠标点击点，添加了 CSS 偏移
+    // 为了让文字居中于鼠标点击点，添加 CSS 偏移
     // floatText.style.transform = 'translate(-50%, -100%)'; 
     
     // =======================================================
