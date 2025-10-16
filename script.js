@@ -67,7 +67,7 @@ alen.addEventListener("click", (e) => {
   floatText.style.left = `${rect.left + rect.width / 2 + xOffset}px`;
   floatText.style.top = `${rect.top + rect.height / 2 + yOffset}px`;
   document.body.appendChild(floatText);
-  setTimeout(() => floatText.remove(), 1000);
+  setTimeout(() => floatText.remove(), 1100);
 });
 
 // --------------------
