@@ -1,0 +1,102 @@
+body {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #1e1e2e, #2c2c54);
+  color: #fff;
+  padding: 10px;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #ffd166;
+  margin-bottom: 10px;
+}
+
+button {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.1s, background 0.2s;
+}
+
+button:hover {
+  background: #444;
+  transform: scale(1.05);
+}
+
+img#alen {
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.3s ease;
+}
+
+img#alen:active {
+  transform: scale(0.9);
+  filter: brightness(1.3);
+}
+
+/* --- CLICK EFFECTS --- */
+#alen.clicked {
+  transform: scale(1.15);
+  filter: brightness(1.3);
+}
+
+.floating-text {
+  position: absolute;
+  color: #ffd166;
+  font-size: 18px;
+  font-weight: bold;
+  pointer-events: none;
+  animation: floatUp 1s ease-out forwards;
+  text-shadow: 0 0 8px #ffeb99;
+  z-index: 999;
+}
+
+@keyframes floatUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+}
+
+/* Notification banners */
+.banner {
+  position: fixed;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: all 0.5s ease;
+  font-size: 14px;
+  z-index: 9999;
+}
+.banner.show {
+  top: 20px;
+  opacity: 1;
+}
+.banner.success {
+  background: #28a745;
+}
+.banner.error {
+  background: #e63946;
+}
+.banner.warning {
+  background: #ffb703;
+  color: black;
+}
+.banner.info {
+  background: #2196f3;
+}
