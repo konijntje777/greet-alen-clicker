@@ -137,10 +137,19 @@ autoBtn.addEventListener("click", () => {
 setInterval(() => {
   if (autoGenerators > 0) {
     count += autoGenerators * greetsPerClick;
+    const floatText = document.createElement("span");
+    floatText.className = "floating-text auto";
+    floatText.textContent = `+${autoGenerators * greetsPerClick}`;
+    const rect = alen.getBoundingClientRect();
+    floatText.style.left = `${rect.left + rect.width / 2}px`;
+    floatText.style.top = `${rect.top + rect.height / 2}px`;
+    document.body.appendChild(floatText);
+    setTimeout(() => floatText.remove(), 1000);
     save();
     updateUI();
   }
 }, 1000);
+
 
 // --------------------
 // REBIRTH
