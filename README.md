@@ -3,6 +3,7 @@
 #### readme writed by [『𝒚』](https://github.com/Love-Lumine)
 > niet snitchen
 ##### Het is een game over mevrouw Greet, je speelt het gewoon zoals cookieclicker.
+## Het heeft niks mee te maken met onbeleefd, just for fun. 
 # How to download
 ### 1. Download de `sourcecode`. → [Download link](https://github.com/konijntje777/greet-alen-clicker/archive/refs/heads/main.zip) 
 ### 2. Unzip de `.zip` bestand
