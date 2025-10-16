@@ -8,4 +8,6 @@
 #### 2. Unzip het.
 #### 3. Ga naar google chrome en type `chrome://extensions/`
 #### 4. Open de `Developer mode` of `Ontwikkelaarsmodus` rechtsboven
-#### 5. Klik op de 
+#### 5. Klik op de knop `Uitgepakte extensie laden` en kies de unzipped sourcecode
+#### normal gezien is dat gewoon klaar, als dat niet lukt → [issue](https://github.com/konijntje777/greet-alen-clicker/issues/new/choose)
+# NIET SNICHTEN
