@@ -18,7 +18,7 @@ const skins = {
   10: "Galaxy Alen",
   25: "Cyber Alen",
   50: "Mythic Alen",
-  67: "67 Divine Alen 67",
+  67: "Divine Alen",
   68: "Ultimate Alen"
 };
 
