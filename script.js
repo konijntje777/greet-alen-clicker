@@ -56,7 +56,7 @@ alen.addEventListener("click", (e) => {
 
     // Animation
     alen.classList.add("clicked");
-    setTimeout(() => alen.classList.remove("clicked"), 200);
+    setTimeout(() => alen.classList.remove("clicked"), 75);
 
     // Floating +X
     const floatText = document.createElement("span");
