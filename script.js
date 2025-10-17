@@ -33,6 +33,9 @@ const autoBtn = document.getElementById("autoUpgrade");
 const rebirthBtn = document.getElementById("rebirthBtn");
 const rebirthCountEl = document.getElementById("rebirthCount");
 const skinNameEl = document.getElementById("skinName");
+const ANIMATION_DURATION_MS = 1100;
+const CLICK_ANIMATION_DURATION_MS = 75;
+const AUTO_UPDATE_INTERVAL_MS = 1000;
 
 // --------------------
 // OFFLINE EARNINGS
@@ -56,7 +59,7 @@ alen.addEventListener("click", (e) => {
 
     // Animation
     alen.classList.add("clicked");
-    setTimeout(() => alen.classList.remove("clicked"), 75);
+    setTimeout(() => alen.classList.remove("clicked"), CLICK_ANIMATION_DURATION_MS);
 
     // Floating +X
     const floatText = document.createElement("span");
@@ -131,11 +134,11 @@ setInterval(() => {
     floatText.style.left = `${rect.left + rect.width / 3}px`;
     floatText.style.top = `${rect.top + rect.height / 3}px`;
     document.body.appendChild(floatText);
-    setTimeout(() => floatText.remove(), 1100);
+    setTimeout(() => floatText.remove(), ANIMATION_DURATION_MS);
     save();
     updateUI();
   }
-}, 1000);
+}, AUTO_UPDATE_INTERVAL_MS);
 
 // --------------------
 // REBIRTH
