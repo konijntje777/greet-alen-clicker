@@ -12,6 +12,7 @@ let rebirthCost = parseInt(localStorage.getItem("rebirthCost")) || 10000;
 let skinName = localStorage.getItem("skinName") || "Default";
 let lastTime = parseInt(localStorage.getItem("lastTime")) || Date.now();
 
+
 const skins = {
   0: "Default",
   5: "Golden Alen",

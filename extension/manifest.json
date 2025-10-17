@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Greet Alen Clicker",
-  "version": "1.0",
-  "description": "Click Greet, upgrade, and rebirth for skins and more!",
+  "version": "Alpha",
+  "description": "Greet Alen Clicker",
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

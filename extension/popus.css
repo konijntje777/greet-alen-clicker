@@ -19,7 +19,6 @@
   opacity: 1;
 }
 
-/* Colors for different message types */
 .banner.success {
   background: #28a745;
 }
@@ -83,7 +82,6 @@ img#alen:active {
   filter: brightness(1.3);
 }
 
-/* Banner notification system */
 .banner {
   position: fixed;
   top: -60px;
