@@ -18,8 +18,8 @@ const skins = {
   10: "Galaxy Alen",
   25: "Cyber Alen",
   50: "Mythic Alen",
-  75: "Divine Alen",
-  100: "Ultimate Alen"
+  67: "67 Divine Alen 67",
+  68: "Ultimate Alen"
 };
 
 // --------------------
@@ -73,9 +73,6 @@ alen.addEventListener("click", (e) => {
     // 设置 floatText 的位置
     floatText.style.left = `${x}px`;
     floatText.style.top = `${y}px`;
-    
-    // 为了让文字居中于鼠标点击点，添加 CSS 偏移
-    // floatText.style.transform = 'translate(-50%, -100%)'; 
     
     // =======================================================
 
