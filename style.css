@@ -43,11 +43,11 @@ img#alen {
     -moz-user-select: none;
     -ms-user-select: none;
     
-    /* 确保拖动被阻止 */
+    /* 阻止用户拖动图片 */
     -moz-user-drag: none;
     -o-user-drag: none;
     -webkit-user-drag: none;
-    
+  /* user-drag: none; 为非法属性，*/
 }
 
 img#alen:active {
@@ -77,7 +77,6 @@ img#alen:active {
   }
 }
 
-/* Notification banners */
 .banner {
   position: fixed;
   top: -60px;
