@@ -1,4 +1,3 @@
-// Variables will be initialized in init().
 let count;
 let greetsPerClick;
 let clickUpgradeLevel;
@@ -32,7 +31,6 @@ const ANIMATION_DURATION_MS = 1100;
 const CLICK_ANIMATION_DURATION_MS = 75;
 const AUTO_UPDATE_INTERVAL_MS = 1000;
 
-// helper: fetch a resource and parse JSON while stripping C-style comments
 async function fetchJsonWithComments(path) {
     try {
         const res = await fetch(path);
@@ -45,11 +43,10 @@ async function fetchJsonWithComments(path) {
 }
 
 async function init() {
-    // Attempt to load defaults/data from resources. These files may contain comments, so we strip them.
+  
     const defaults = await fetchJsonWithComments('resources/var/vars');
     const dataSnapshot = await fetchJsonWithComments('resources/data/0');
 
-    // Helper to pick value: prefer localStorage -> dataSnapshot -> defaults -> hardcoded fallback
     const pick = (key, fallback) => {
         const ls = localStorage.getItem(key);
         if (ls !== null && ls !== undefined) return ls;
@@ -99,8 +96,6 @@ async function init() {
     document.body.appendChild(floatText);
     setTimeout(() => floatText.remove(), ANIMATION_DURATION_MS);
     });
-
-    // rest of listeners and intervals are the same
 
 alen.addEventListener('dragstart', (e) => {
     e.preventDefault(); 
@@ -226,11 +221,8 @@ function showBanner(text, type = "info") {
     setTimeout(() => banner.classList.remove("show"), 2000);
     setTimeout(() => banner.remove(), 2500);
 }
-
-    // initial UI and skin update
     updateSkin();
     updateUI();
 }
 
-// Start initialization. Note: fetch() of local files requires running the page from an HTTP server.
 init();

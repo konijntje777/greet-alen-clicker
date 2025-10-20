@@ -1,4 +1,4 @@
-{
+module.exports = {
   "count": 0,
   "greetsPerClick": 1,
   "clickUpgradeLevel": 0,
@@ -10,9 +10,3 @@
   "skinName": "Default",
   "lastTime": 0
 }
-
-/*
-This file is a snapshot of the values originally stored in localStorage by script.js.
-It is used to migrate or pre-seed the game's state when running under an HTTP server.
-Browsers generally block fetch() on file:// URLs; run a small HTTP server (e.g. Live Server) to allow fetching these files.
-*/
