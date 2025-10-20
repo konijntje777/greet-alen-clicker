@@ -7,7 +7,6 @@ more cool ideas? → github.com/konijntje777/greet-alen-clicker/issues
 pull requests are welcome!
 Thank You for playing!
 -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -44,7 +43,7 @@ Thank You for playing!
         <button id="rebirthBtn">✨ Rebirth (Cost: 10,000 Greets)</button>
     </div>
 
-    <div id="banner-container"></div>
+    <div id="banner-container" aria-live="polite" role="status"></div>
 
     <footer class="footer-info">
         <p>&copy; Luay all rights reserved. |  Co-owner:  <a href="https://github.com/Love-Lumine">『𝒚』</a>.</p>
@@ -53,6 +52,6 @@ Thank You for playing!
         </p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

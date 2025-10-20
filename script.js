@@ -9,8 +9,16 @@ let rebirthCost;
 let skinName;
 let lastTime;
 
-// skins will be loaded from resources/cache/lower/skins.json when available.
-let skins = null;
+
+const skins = {
+    0: "Default",
+    5: "Golden Alen",
+    10: "Galaxy Alen",
+    25: "Cyber Alen",
+    50: "Mythic Alen",
+    67: "Divine Alen",
+    68: "Ultimate Alen"
+};
 
 const countEl = document.getElementById("count");
 const alen = document.getElementById("alen");
@@ -38,26 +46,6 @@ async function init() {
   
     const defaults = await fetchJsonWithComments('resources/var/vars');
     const dataSnapshot = await fetchJsonWithComments('resources/data/0');
-    // attempt to load skins cache (non-critical)
-    try {
-        const res = await fetch('resources/cache/lower/skins.json');
-        if (res.ok) skins = await res.json();
-    } catch (e) {
-        skins = null;
-    }
-
-    // fallback skins mapping if cache not available
-    if (!skins) {
-        skins = {
-            0: "Default",
-            5: "Golden Alen",
-            10: "Galaxy Alen",
-            25: "Cyber Alen",
-            50: "Mythic Alen",
-            67: "Divine Alen",
-            68: "Ultimate Alen"
-        };
-    }
 
     const pick = (key, fallback) => {
         const ls = localStorage.getItem(key);
