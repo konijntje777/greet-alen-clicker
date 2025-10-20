@@ -91,21 +91,21 @@ img#alen {
 
 .banner {
     position: fixed;
-    top: 20px;
+    top: -60px;
     left: 50%;
-    transform: translate(-50%, -120%);
+    transform: translateX(-50%);
     background: #333;
     color: white;
     padding: 10px 20px;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     opacity: 0;
-    transition: transform 0.35s ease, opacity 0.35s ease;
+    transition: all 0.5s ease;
     font-size: 14px;
     z-index: 9999;
 }
 .banner.show {
-    transform: translate(-50%, 0);
+    top: 20px;
     opacity: 1;
 }
 .banner.success {
@@ -143,7 +143,3 @@ img#alen {
 }
 
 .footer-info a:hover {color: #00c3ff;}
-
-@media (prefers-reduced-motion: reduce) {
-    .banner, img#alen, .floating-text { transition: none !important; animation: none !important; }
-}
