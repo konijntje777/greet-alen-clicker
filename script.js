@@ -44,7 +44,7 @@ async function fetchJsonWithComments(path) {
 
 async function init() {
   
-    const defaults = await fetchJsonWithComments('resources/var/vars');
+    const defaults = await fetchJsonWithComments('resources/var/vars.json');
     const dataSnapshot = await fetchJsonWithComments('resources/data/0');
 
     const pick = (key, fallback) => {

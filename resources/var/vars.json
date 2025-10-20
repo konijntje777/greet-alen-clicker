@@ -1,12 +1,12 @@
 {
-    "count": 0,
-    "greetsPerClick": 1,
-    "clickUpgradeLevel": 0,
-    "clickUpgradeCost": 100,
-    "autoGenerators": 0,
-    "autoUpgradeCost": 10,
-    "rebirthCount": 0,
-    "rebirthCost": 10000,
-    "skinName": "Default",
-    "lastTime": 0
+  "count": 0,
+  "greetsPerClick": 1,
+  "clickUpgradeLevel": 0,
+  "clickUpgradeCost": 100,
+  "autoGenerators": 0,
+  "autoUpgradeCost": 10,
+  "rebirthCount": 0,
+  "rebirthCost": 10000,
+  "skinName": "Default",
+  "lastTime": 0
 }
