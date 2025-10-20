@@ -1,0 +1,18 @@
+{
+    "count": 0,
+    "greetsPerClick": 1,
+    "clickUpgradeLevel": 0,
+    "clickUpgradeCost": 100,
+    "autoGenerators": 0,
+    "autoUpgradeCost": 10,
+    "rebirthCount": 0,
+    "rebirthCost": 10000,
+    "skinName": "Default",
+    "lastTime": 0
+}
+
+/*
+This file is a simple JSON snapshot of default variables used by script.js.
+If you want to change starting values, edit these numbers.
+Note: script.js will attempt to fetch this file when localStorage values are missing.
+*/
