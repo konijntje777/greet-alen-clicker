@@ -15,6 +15,7 @@
 # NIET SNITCHEN
 
 ## How to download the extension version.
+> de ext. ver is al heel lang niet geupdated en ik heb ook geen plan om te updaten. de web ver heeft veel mooier ui en anders.  --『𝒚』
 #### 1. Download `extension ver`. → [Download link](https://github.com/konijntje777/greet-alen-clicker/releases/download/extension/greet-alen-clicker-extension.ver.zip) 
 #### 2. Unzip de `.zip` bestand
 #### 3. Open jouw chrome en type `chrome://extensions`
